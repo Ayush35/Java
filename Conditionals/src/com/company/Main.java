@@ -80,6 +80,18 @@ public class Main {
         }
         //que 6
         System.out.println("Enter the website: - ");
-        String website = sc.nextLine();
+        String web = sc.nextLine();
+//        System.out.println(web.indexOf(".com"));
+        if(web.indexOf(".com") != -1){
+            System.out.println("this is a commercial website");
+        }
+        else if(web.indexOf(".org")!=-1){
+            System.out.println("this is a Organisation website");
+        }else if(web.indexOf(".in")!=-1){
+            System.out.println("this is Indian website");
+        }
+        else{
+            System.out.println("Please enter something Useful");
+        }
     }
 }
