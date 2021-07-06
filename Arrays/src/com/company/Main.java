@@ -21,5 +21,26 @@ public class Main {
             }
         }
 
+        // Que 3
+        int[] pMarks = {44,73,96,21,23,33,67,99};
+        double pavg = 0;
+        for(int i = 0 ; i<pMarks.length ; i++){
+            pavg += pMarks[i];
+        }
+        System.out.println("here's the average " + pavg/pMarks.length);
+
+        //que 4
+
+        int[][] mat1 = {{1, 4, 9} ,
+                        {6,7 ,2}};
+        int[][] mat2 = {{21,21,54},{21,56,93}};
+        int[][] mat3 = {{0,0,0,},{0,0,0}};
+        for (int i = 0 ; i<2 ; i++){
+            for (int j = 0 ; j<3 ;j++){
+                mat3[i][j] = mat1[i][j] + mat2[i][j];
+            }
+        }
+        System.out.println(mat3);
+
     }
 }
